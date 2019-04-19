@@ -1,0 +1,17 @@
+<div class="main_home">
+    <app-header></app-header>
+    <div>
+        <ol class="carousel-indicators1">
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/Home']"></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/AboutUs']"></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: false}"><a [routerLink]="['/KrypticMinds/CaseStudy']"></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/blog']"></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a></a></li>
+        </ol>
+    </div>
+    <div class="container">
+     <router-outlet> </router-outlet>
+    </div>
+</div>
+

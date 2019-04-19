@@ -1,0 +1,49 @@
+.sectionSec{
+    margin-top:100px;
+}
+.sectionSec1{
+  margin-top:50px;
+}
+.sectionSec h3{
+  /* font-family: Montserrat; */
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.2px;
+  color: #fc5d42;
+}
+.sectionSec1 h3{
+  /* font-family: Montserrat; */
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+.sectionSec .about_p1 , .sectionSec1 .about_h3{
+  /* font-family: Montserrat; */
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+.sectionSec .about_p2, .sectionSec1 .about_p2{
+    /* font-family: Montserrat; */
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 24px;
+  }
+  .aboutus_imageTag{
+    text-align: center;
+  }

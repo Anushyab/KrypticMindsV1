@@ -1,0 +1,32 @@
+<div class="main_home_div_text MontserratRegular">
+  
+  <div class="row" *ngIf="data1">
+       <div class="col-lg-5 col-md-12 col-sm-12 col-sx-12 aboutus_imageTag">
+          <img *ngIf="showsecondDivImage" [@enterAnimation2] id="myImage1" width="249px" height="418px"  src="/assets/images/asset-1-1.png">
+       </div>
+       <div class="col-lg-7 col-md-12 col-sm-12 col-sx-12">
+          <div class="sectionSec" *ngIf="pragraph" [@ParagraphText]>
+              <h3>WHO WE ARE</h3>
+              <p class="about_p1">A passionate team rooted in digital</p>
+              <p class="about_p2">We are a bunch of designers & developers with a start-up DNA enabling digital transformation for Large enterprises & Startups. We consult, design and build the digital presence for your businesses by reducing system complexity and delivering relevance. We are a customer driven company and work in a collaborative environment.</p>
+          </div>
+        </div>
+  </div>
+  <div class="row" *ngIf="data2">
+      <div class="col-lg-7 col-md-12 col-sm-12 col-sx-12">
+         <div class="sectionSec1" *ngIf="pragraph1" [@ParagraphText1]>
+            <h2>Our culture, value & belief</h2>
+                     <h3 class="about_h3">Design Thinking</h3>
+                     <p class="about_p2">We take a design first approach to solve and build sustainable & scalable design solutions.</p>
+                     <h3 class="about_h3">Engineering DNA</h3>
+                     <p class="about_p2">Lean development, flow thinking & DevOps underlay the core-principles of anything that we build.</p>
+                     <h3 class="about_h3">Delivery Focused</h3>
+                     <p class="about_p2">We help businesses in transformation, by focusing on systems and processes to serve & retain customers.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-sx-12  aboutus_imageTag">
+          <img *ngIf="showThirdDivImage" [@enterAnimation3] id="myImage1" width="249px" height="418px"  src="/assets/images/image-1854.png">
+       </div>
+ </div>
+
+</div>

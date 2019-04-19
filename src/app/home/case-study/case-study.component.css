@@ -1,0 +1,63 @@
+.slider-buttons{
+    padding-top: 157px;
+}
+.slider-button {
+    width: 44px;
+    height: 44px;
+    /* display: block; */
+    position: relative;
+    z-index: 2;
+    color: #fc5d42;
+    transition: color .3s cubic-bezier(.785,.135,.15,.86);
+}
+.slider-buttons .navLink {
+    pointer-events: auto;
+    cursor: pointer;
+}
+.slider-buttons button, .slider-buttons button:focus {
+    border: none;
+}
+
+.slider-buttons button {
+    /* display: block; */
+    cursor: pointer;
+    background: none;
+}
+.slider-button:after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(.785,.135,.15,.86),-webkit-transform .3s cubic-bezier(.785,.135,.15,.86);
+    transition: transform .3s cubic-bezier(.785,.135,.15,.86),opacity .3s cubic-bezier(.785,.135,.15,.86);
+    transition: transform .3s cubic-bezier(.785,.135,.15,.86),opacity .3s cubic-bezier(.785,.135,.15,.86),-webkit-transform .3s cubic-bezier(.785,.135,.15,.86);
+    -webkit-transform: rotate(45deg) scale(.5);
+    transform: rotate(45deg) scale(.5);
+    background: #fc5d42;
+    display: block;
+}
+
+.slider-button:hover:after {
+    color: #ffffff;
+    background: #fc5d42;
+    opacity: 1;
+}
+.slider-button:hover{
+    color: #ffffff;
+}
+button:focus {
+    outline: none;
+}
+a {
+    color: inherit !important;
+}
+button.slider-button.navLink.active.listActive:after {
+    opacity: 1;
+}
+button.slider-button.navLink.active.listActive{
+    color: #ffffff;
+}

@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+}
+@font-face {
+    font-family: 'khula-lite';
+    src: url(/assets/fonts/khula/Khula-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(/assets/fonts/ttf/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(/assets/fonts/ttf/Montserrat-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: 'Khula-Bold';
+    src: url(/assets/fonts/khula/Khula-Bold.ttf);
+  }
+  .MontserratSemibold{
+      font-family: Montserrat-SemiBold;
+  }
+  .MontserratRegular{
+    font-family: Montserrat-Regular;
+}
+.main_home_div_text1{
+    color: #fff;
+    padding-top: 20px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    .main_home_div_text{
+        color: #fff;
+        padding-top: 100px;
+    }
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+    .main_home_div_text{
+        color: #fff;
+        padding-top: 100px;
+    }
+  }
+  @media only screen and (min-device-width : 1024px) {
+    .main_home_div_text{
+        color: #fff;
+        padding-top: 186px;
+    }
+  }
+
+  /* case study common css */
+
+  .case-study-head{
+    /* font-family: Montserrat; */
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    text-align: center;
+}
+.case-study-head-Orangecolor{
+    color: #fc5d42;
+}
+.case-study-head-whitecolor{
+    color: #ffffff;
+}
+.case-study-head-h1{
+    /* font-family: Montserrat; */
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: 4.5px;
+    color: #ffffff;
+    position: relative;
+    z-index: 9;
+}
+.caseStudyImage{
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    width: 173px;
+    height: 93px;
+}
+.case-study-desc{
+    width: 100%;
+    height: 246px;
+    padding: 51px 49px;
+    background-color: #28356d;
+    position: relative;
+    top: 18px;
+}
+.caseStudy_left_image{
+    width: 100%;
+}
+/* case study common css end */
+
+
+.main_home1 .header {
+    background-color: transparent !important;
+}

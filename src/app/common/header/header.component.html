@@ -1,0 +1,27 @@
+<header class="header" *ngIf="headerText" [@headerText]>
+    <div class="pad header__nav__left"><a [routerLink]="['/KrypticMinds/Home']"><img  alt="paketo_image" class="header__img" src="/assets/images/final-light.png"></a></div>
+    <div class="header_menu">
+        <ul>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a  class="header_list" [routerLink]="['/KrypticMinds/Home']" (click)="selected = 'Home'">  Home</a>
+            </li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a  class="header_list" [routerLink]="['/KrypticMinds/AboutUs']"  (click)="selected = 'AboutUs'">About Us</a>
+            </li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: false}">
+               <a  class="header_list" [routerLink]="['/KrypticMinds/CaseStudy']" (click)="selected = 'CaseStudy'"> Case Study</a>
+            </li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+               <a class="header_list" [routerLink]="['/KrypticMinds/blog']" (click)="selected = 'Blog'"> Blog</a>
+            </li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a class="header_list" (click)="selected = 'Team'">Team</a>
+            </li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a class="header_list" (click)="selected = 'Contact'">Contact</a>
+            </li>
+        </ul>
+    </div>
+  </header>
+
+  

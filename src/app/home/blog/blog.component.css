@@ -1,0 +1,7 @@
+.blogs{
+    background-image: url("/assets/images/blog.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat, repeat;
+    height: 302px;
+    background-size: cover;
+}
