@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin: 0px;
+    background-color: #263162; 
 }
 @font-face {
     font-family: 'khula-lite';
@@ -101,4 +102,7 @@ body{
 
 .main_home1 .header {
     background-color: transparent !important;
+}
+.col-6,.col-lg-6, .col-md-6 , .col-sm-6 , .col-xs-6{
+    width: 50%;
 }

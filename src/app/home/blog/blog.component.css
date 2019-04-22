@@ -1,7 +1,42 @@
 .blogs{
-    background-image: url("/assets/images/blog.png");
+    background-image: url("/assets/images/blog1.png");
     background-color: #cccccc;
     background-repeat: no-repeat, repeat;
-    height: 302px;
+    height: 366px;
     background-size: cover;
+    width: 90%;
+}
+.blogs1{
+    background-image: url("/assets/images/blog2.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat, repeat;
+    height: 366px;
+    background-size: cover;
+    width: 90%;
+}
+.blogs2{
+    background-image: url("/assets/images/blog4.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat, repeat;
+    height: 366px;
+    background-size: cover;
+    width: 90%;
+}
+.blogbtn{
+    text-align: center;
+}
+.blogBtnText{
+    padding: 10px 40px;
+    margin-top: 30px;
+    border: solid 1px #fc5d42;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.blogBtnText a{
+    color: #fc5d42 !important;
+}
+.blogBtnText a:hover{
+    text-decoration: none;
+
 }

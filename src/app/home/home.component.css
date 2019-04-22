@@ -1,6 +1,6 @@
 .main_home{
   /* height: 100vh; */
-  background-color: #263162; 
+  /* background-color: #263162;  */
 }
 
 /* .carousel-indicators{
@@ -46,10 +46,10 @@
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 5px;
-  height: 5px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 4px;
+  height: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
   text-indent: -999px;
   background-color: rgba(255,255,255,.5);
   border-radius: 50%;
@@ -63,8 +63,9 @@
 .carousel-indicators1 li.listActive {
   background-color: #fc5d42 !important;
   border: 1px solid #fc5d42 !important;
-  height: 6px !important;
-  width: 6px !important;
+  /* height: 6px !important;
+  width: 6px !important; */
+  transform: scale(1.5);
   margin-right: 5px !important;
   margin-left: 5px !important;
 }
