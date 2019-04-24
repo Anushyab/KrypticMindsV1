@@ -34,7 +34,7 @@ const routes: Routes = [
         ]
     },
     {
-        path: 'commoncasestudy',
+        path: 'commoncasestudy/:id',
         component: CommonCasestudyComponent,
     }
 ];

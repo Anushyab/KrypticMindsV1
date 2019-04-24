@@ -15,7 +15,8 @@ import { CaseStudy1Component } from './home/case-study/case-study1/case-study1.c
 import { CaseStudy2Component } from './home/case-study/case-study2/case-study2.component';
 import { BlogComponent } from './home/blog/blog.component';
 import { CommonCasestudyComponent } from './common-casestudy/common-casestudy.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import {ApiService} from './api.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,9 +35,10 @@ import { CommonCasestudyComponent } from './common-casestudy/common-casestudy.co
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

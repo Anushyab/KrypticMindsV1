@@ -12,6 +12,6 @@ export class CaseStudy1Component implements OnInit {
   ngOnInit() {
   }
   routeCommonCaseStudy() {
-      this.router.navigateByUrl('/commoncasestudy');
+      this.router.navigateByUrl('/commoncasestudy/1');
   }
 }

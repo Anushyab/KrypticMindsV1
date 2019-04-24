@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef, TemplateRef , HostListener} from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
-import { Router } from '@angular/router';
+import { Router , ActivatedRoute} from '@angular/router';
+import { ApiService } from '../api.service';
+
 
 @Component({
   selector: 'app-common-casestudy',
@@ -16,6 +18,9 @@ export class CommonCasestudyComponent implements OnInit {
     section5: false,
     section6: false,
   };
+  CaseStudyDetaildata: any = {};
+  bannnerBackGround: any;
+  id: any;
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
     if (event.keyCode === 38) {
@@ -26,6 +31,9 @@ export class CommonCasestudyComponent implements OnInit {
         this.sections['section' + temp[1] ] = false;
         const temp2 = Number(temp[1]) - 1;
         this.sections['section' + temp2 ] = true;
+        if ( temp2 === 1) {
+          this.bannnerBackGround = this.CaseStudyDetaildata.banner.BannnerImage;
+        }
       } else {
         this.router.navigateByUrl('KrypticMinds/AboutUs');
       }
@@ -36,15 +44,34 @@ export class CommonCasestudyComponent implements OnInit {
       this.sections['section' + temp[1] ] = false;
       const temp2 = Number(temp[1]) + 1;
       this.sections['section' + temp2 ] = true;
+      this.bannnerBackGround = ' ';
       } else {
         this.router.navigateByUrl('KrypticMinds/blog');
       }
     }
   }
-  constructor(public router: Router) { }
+  constructor(public router: Router, public gs: ApiService , private route: ActivatedRoute,) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.id = params['id'];
+    });
     this.sections.section1 = true;
+    this.CaseStudyDetail(this.id);
+  }
+  CaseStudyDetail(value) {
+    const url = '/assets/json/caseStudy' + value + '.json';
+    this.gs.localfileinfo(url)
+    .subscribe(
+      res => {
+      this.CaseStudyDetaildata = res;
+      this.bannnerBackGround = this.CaseStudyDetaildata.banner.BannnerImage;
+       },
+      e => {
+      },
+      () => {
+      }
+    );
   }
 
 }

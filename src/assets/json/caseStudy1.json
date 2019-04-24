@@ -1,0 +1,58 @@
+{
+    "banner": {
+      "title": "Industry application of blockchain for trade finance",
+      "subTitle": "Trade Finance is an industry that got benefited tremendously from Blockchain Technology – due to the Trust and Proof of Work",
+      "BannnerImage": "/assets/images/nasa-43563-unsplash@2x.png"
+    },
+    "statement": {
+      "statements": [
+        "No proof of work or transparency in the pricing over the journey of a product from the manufacturer to the buyer as multiple stakeholders pass-on the invoice at different stages",
+        "Lack of ability by prevailing industry applications to handle multiple data touch points and make those data available on one single platform",
+        "Different stakeholders using different software to handle the same invoice even within the organization. Most of the work ends up on being on physical papers",
+        "Different stakeholders using different software to handle the same invoice even within the organization. Most of the work ends up on being on physical papers"
+      ]
+    },
+    "workflow": {
+      "title": "Created a single database with the help of blockchain technology to track the invoices",
+      "workflowImage": "/assets/images/casestudybanner.png"
+    },
+    "solution": {
+      "title": "Created a single database with the help of blockchain technology to track the invoices",
+      "image1": "/assets/images/caseStudySce4imag1.png",
+      "image2": "/assets/images/caseStudySce4imag2.png"
+    },
+    "techstack": {
+      "imageg1": "/assets/images/caseStudy5image1.png",
+      "title": "Created a single database with the help of blockchain technology to track the invoices",
+      "techstacks": [
+        {
+          "title": "CSS3",
+          "images": "/assets/images/css3.png",
+          "subTitle": "SCSS, BEM Mobile first critical rendering "
+        },
+        {
+          "title": "HTML5",
+          "images": "/assets/images/html5.png",
+          "subTitle": "Object oriented, functional, imperastive "
+        },
+        {
+          "title": "PYTHON",
+          "images": "/assets/images/phython.png",
+          "subTitle": "Object oriented, functional, imperastive "
+        },
+        {
+          "title": "JAVASCRIPT",
+          "images": "/assets/images/js.png",
+          "subTitle": "Node, ES6, Webpack, React Angular"
+        }
+      ]
+    },
+    "keyHighlights": {
+      "tilte": "Key highlights",
+      "keyHighlightsData": [
+        "Eased stakeholders for tracking the invoice and handle it without actually tempering the data",
+        "Aggregated all the data touch point on a single database making it flawless to identify and move transactions fasters",
+        "Created a proof of work to identify the market value of the same commodity at various touch stages of transaction and timelines"
+      ]
+    }
+  }

@@ -1,4 +1,4 @@
-<div class="main_home1">
+<div class="main_home1" [style.background-image]="'url('+ bannnerBackGround +')'">
     <app-header></app-header>
     <div>
         <ol class="carousel-indicators1">
@@ -15,8 +15,8 @@
         <div class="main_home_div_text MontserratRegular">
 
             <div class="caseStudyFirst">
-                   <h1>Industry application of blockchain for trade finance</h1>
-                   <p>Trade Finance is an industry that got benefited tremendously from Blockchain Technology – due to the Trust and Proof of Work</p>
+                   <h1>{{CaseStudyDetaildata.banner.title}}</h1>
+                   <p>{{CaseStudyDetaildata.banner.subTitle}}</p>
             </div>
 
         </div>
@@ -34,17 +34,8 @@
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                           <ul>
-                            <li>
-                                <span> proof of work or transparency in the pricing over the journey of a product from the manufacturer to the buyer as multiple stakeholders pass-on the invoice at different stages</span>
-                            </li>
-                            <li>
-                                <span>Lack of ability by prevailing industry applications to handle multiple data touch points and make those data available on one single platform</span>
-                            </li>
-                            <li>
-                                <span> Different stakeholders using different software to handle the same invoice even within the organization. Most of the work ends up on being on physical papers</span>
-                            </li>
-                            <li>
-                                <span>Different stakeholders using different software to handle the same invoice even within the organization. Most of the work ends up on being on physical papers</span>
+                            <li *ngFor="let statement of CaseStudyDetaildata.statement.statements">
+                                <span>{{statement}}</span>
                             </li>
                           </ul>
                   </div>
@@ -58,10 +49,10 @@
     <div class="container section" *ngIf="sections.section3" id="section-3">
         <div class="main_home_div_text MontserratRegular">
            <h1>Workflow</h1>
-           <p>Created a single database with the help of blockchain technology to track the invoices</p>
+           <p>{{CaseStudyDetaildata.workflow.title}}</p>
            <div class="row">
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img class="casestudyThirdSecImage" src="/assets/images/casestudybanner.png">
+                <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.workflow.workflowImage}}">
              </div>
            </div>
         </div>
@@ -72,13 +63,13 @@
     <div class="container section" *ngIf="sections.section4" id="section-4">
         <div class="main_home_div_text MontserratRegular">
            <h1>Solution</h1>
-           <p>Created a single database with the help of blockchain technology to track the invoices</p>
+           <p>{{CaseStudyDetaildata.solution.title}}</p>
            <div class="row">
              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <img class="casestudyThirdSecImage" src="/assets/images/caseStudySce4imag1.png">
+                <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.solution.image1}}">
              </div>
              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <img class="casestudyThirdSecImage" src="/assets/images/caseStudySce4imag2.png">
+                <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.solution.image2}}">
              </div>
            </div>
         </div>
@@ -97,19 +88,18 @@
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
               
-                <img class="casestudyfourthSecImage" src="/assets/images/caseStudy5image1.png">
+                <img class="casestudyfourthSecImage" src="{{CaseStudyDetaildata.techstack.imageg1}}">
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                  <p>Created a single database with the help of blockchain technology to track the invoices</p>
+                  <p>{{CaseStudyDetaildata.techstack.title}}</p>
                   <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" *ngFor="let techStack of CaseStudyDetaildata.techstack.techstacks">
                            
-                            <img src="/assets/images/css3.png">
-                            <h1 class="techstackHead">CSS3</h1>
-                            <p>SCSS, BEM Mobile
-                                first critical rendering </p>
+                            <img src="{{techStack.images}}">
+                            <h1 class="techstackHead">{{techStack.title}}</h1>
+                            <p>{{techStack.subTitle}}</p>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                             <img src="/assets/images/html5.png">
                             <h1 class="techstackHead">HTML5</h1>
                             <p>Semantics, Accessibility,
@@ -125,7 +115,7 @@
                                 <img src="/assets/images/js.png">
                                 <h1 class="techstackHead">JAVASCRIPT</h1>
                                 <p>Node, ES6, Webpack, React Angular</p>
-                              </div>
+                              </div> -->
                   </div>
               </div>
           </div>
@@ -141,15 +131,10 @@
                   <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                       <h1 class="sixsceHead">Key highlights</h1>
                       <ul>
-                          <li>
-                              <span>Eased stakeholders for tracking the invoice and handle it without actually tempering the data</span>
+                          <li *ngFor="let keyHighlights of CaseStudyDetaildata.keyHighlights.keyHighlightsData">
+                              <span>{{keyHighlights}}</span>
                           </li>
-                          <li>
-                              <span>Aggregated all the data touch point on a single database making it flawless to identify and move transactions fasters</span>
-                          </li>
-                          <li>
-                              <span> Created a proof of work to identify the market value of the same commodity at various touch stages of transaction and timelines</span>
-                          </li>
+                          
                         </ul>
                   </div>
                   <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 secsixth">
