@@ -8,7 +8,8 @@ import { CaseStudy1Component } from './home/case-study/case-study1/case-study1.c
 import { CaseStudy2Component } from './home/case-study/case-study2/case-study2.component';
 import { BlogComponent } from './home/blog/blog.component';
 import { CommonCasestudyComponent } from './common-casestudy/common-casestudy.component';
-
+import {TeamComponent} from './home/team/team.component';
+import {ContactUsComponent} from './home/contact-us/contact-us.component';
 const routes: Routes = [
     {
         path: 'KrypticMinds',
@@ -29,6 +30,14 @@ const routes: Routes = [
                 component: CaseStudy2Component},
                 { path: '', redirectTo: '1', pathMatch: 'full'}
             ]
+            },
+            {
+                path: 'Team',
+                component: TeamComponent,
+            },
+            {
+                path: 'ContactUs',
+                component: ContactUsComponent,
             },
             { path: '', redirectTo: 'Home', pathMatch: 'full'}
         ]

@@ -25,5 +25,16 @@ export class HeaderComponent implements OnInit {
     this.selected = 'Home';
     this.headerText = true;
   }
-
+  navDropDown() {
+    let x = document.getElementById('sidebar-menu');
+    if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+  }
+  disableScreen() {
+    let x = document.getElementById('sidebar-menu');
+    x.style.display = 'none';
+  }
 }

@@ -61,3 +61,10 @@ button.slider-button.navLink.active.listActive:after {
 button.slider-button.navLink.active.listActive{
     color: #ffffff;
 }
+@media only screen and (min-device-width: 1024px)
+{
+.study-page
+{
+    padding-left: 102px;
+}
+}

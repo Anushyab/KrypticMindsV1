@@ -1,0 +1,39 @@
+<div class="main_home_div_text cont-page">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-12 col-xs-12 ">
+      <h3 class="datail-h">Contact us</h3>
+      <h3 class="span">General Enquiries</h3>
+      <h3 class="span">Info@hashworks.co</h3>
+      <h3 class="span">+91-95916 69922</h3>
+      <p class="span-p">Gayathri Mansion, # 80/3 , Bellandur, Outer Ring Road,Bengaluru, Karnataka, 560103 </p>
+      <div class="fo-img">
+          <a href="https://twitter.com/login?lang=en" target="_blank"><img class="fotter-img1" src="./assets/images/group-12.png"></a>
+          <a href="https://in.linkedin.com/" target="_blank"><img class="fotter-img" src="./assets/images/group-4.png"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img class="fotter-img" src="./assets/images/group-5.png"></a>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-12 col-sm-12 col-12 col-xs-12 form-div ">
+        <form (ngSubmit)="customerDetails()"  #f="ngForm" name="form" >
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 col-xs-12  ">
+              <label class="lab" [class.selectedLabel]="nameClicked" >Name</label>
+              <input type = "text" autocomplete="off" (click)="isClicked()" [class.selectedField]="nameClicked" name="name" [(ngModel)]="model.name" #name="ngModel" class="input-field form-control" required >
+              <div *ngIf="name.invalid && (name.dirty && name.touched)"  class="help-block" >Please type your name</div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 col-xs-12 ">
+              <label class="lab" [class.selectedLabel]="companyClicked">Company</label>
+              <input type = "text" autocomplete="off"  (click)="isClicked1()" [class.selectedField]="companyClicked"  name="companyName" [(ngModel)]="model.companyName" #companyName="ngModel" class="input-field form-control" required >
+              <div *ngIf="companyName.invalid && (companyName.dirty && companyName.touched)"  class="help-block" >Please type your company name</div>
+            </div>
+          </div>
+            <label class="lable-sub"  [class.selectedLabel]="emailClicked">Email-id</label>
+            <input type = "email" autocomplete="off" (click)="isClicked2()" [class.selectedField]="emailClicked" name="email" [(ngModel)]="model.email" #email="ngModel" class="input-field form-control" pattern="(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}))" required >
+            <div *ngIf="!email.valid  && model.email != '' && email.touched== true"  class="help-block" >Please type your Email ID in the format <strong>yourname@example.com</strong></div>
+
+            <label class="lable-sub" [class.selectedLabel]="messageClicked">Your Message</label>
+            <textarea class="input-field-c form-control" (click)="isClicked3()" [class.selectedField]="messageClicked" name="comment"  [(ngModel)]="model.comment" #comment="ngModel"></textarea>
+              <div class="btn-div"><button class="btn" [disabled]="!f.form.valid">Send Message</button></div>
+        </form>
+    </div>
+  </div>
+</div>

@@ -25,14 +25,7 @@
 .blogbtn{
     text-align: center;
 }
-.blogBtnText{
-    padding: 10px 40px;
-    margin-top: 30px;
-    border: solid 1px #fc5d42;
-    background-color: transparent;
-    border-radius: 4px;
-    cursor: pointer;
-}
+
 .blogBtnText a{
     color: #fc5d42 !important;
 }
@@ -40,3 +33,167 @@
     text-decoration: none;
 
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+{
+    .bolg-h
+    {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .blog-p
+    {
+        font-family: Montserrat-Regular;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .blogBtnText{
+        padding: 10px 40px;
+        margin-top: 30px;
+        border: solid 1px #fc5d42;
+        background-color: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Montserrat-Regular;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: 1.6px;
+        color: #fc5d42;
+    }
+    .non-carousel
+    {
+        display: none;
+    }
+    .blogs{
+        background-image: url("/assets/images/blog1.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat, repeat;
+        height: 366px;
+        background-size: cover;
+        width: 100%;
+    }
+    .blogs1{
+        background-image: url("/assets/images/blog2.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat, repeat;
+        height: 366px;
+        background-size: cover;
+        width: 100%;
+    }
+    .blogs2{
+        background-image: url("/assets/images/blog4.png");
+        background-color: #cccccc;
+        background-repeat: no-repeat, repeat;
+        height: 366px;
+        background-size: cover;
+        width: 100%;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
+{
+    .bolg-h
+    {
+        font-family: Montserrat-Regular;
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .blog-p
+    {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .blogBtnText{
+        padding: 10px 40px;
+        margin-top: 30px;
+        border: solid 1px #fc5d42;
+        background-color: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Montserrat-Regular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: 1.6px;
+        color: #fc5d42;
+    }
+    .carous
+    {
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 1024px)
+{
+    .bolg-h
+    {
+        font-family: Montserrat-Regular;
+        font-size: 28px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .blog-p
+    {
+        font-family: Montserrat-Regular;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+    .blogBtnText{
+        padding: 10px 40px;
+        margin-top: 30px;
+        border: solid 1px #fc5d42;
+        background-color: transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: Montserrat-Regular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: 1.6px;
+        color: #fc5d42;
+    }
+    .blog-page
+{
+    padding-left: 102px;
+}
+    .carous
+    {
+        display: none;
+    }
+}
+

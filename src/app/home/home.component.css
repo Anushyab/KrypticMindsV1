@@ -92,7 +92,7 @@
     height: 100vh;
   }
   .carousel-indicators1{
-    display: flex;
+    display: none;
   }
 }
   @media only screen and (min-device-width : 1024px) {
@@ -101,5 +101,43 @@
   }
   .carousel-indicators1{
     display: flex;
+  }
+  .scroll 
+  {
+    position: absolute;
+    top: 79%;
+    transform: rotate(90deg);
+    left: 70px;
+    font-family: Montserrat-Regular;
+    font-size: 8px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .line-img
+  {
+    width: 0px;
+    height: 70px;
+    position: absolute;
+    left: 89px;
+    top: 280px;
+    object-fit: contain;
+    border: solid 0.5px #fc5d42;
+  }
+  .scroll::before
+  {
+    height: 70px;
+    width: 1px;
+    transform: rotate(90deg);
+    content: ' ';
+    background-color: #fc5d42;
+    left: -40px;
+    position: absolute;
+    top: -29px;
+    border: solid 0.5px #fc5d42;
   }
 }

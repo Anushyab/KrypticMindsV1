@@ -12,11 +12,11 @@
     </div>
     <!-- section1 starts -->
     <div class="container sec1 section" *ngIf="sections.section1" id="section-1">
-        <div class="main_home_div_text MontserratRegular">
+        <div class="main_home_div_text MontserratRegular ">
 
             <div class="caseStudyFirst">
-                   <h1>{{CaseStudyDetaildata.banner.title}}</h1>
-                   <p>{{CaseStudyDetaildata.banner.subTitle}}</p>
+                   <h1 class="sec-1-h">{{CaseStudyDetaildata.banner.title}}</h1>
+                   <p class="sec-1-p">{{CaseStudyDetaildata.banner.subTitle}}</p>
             </div>
 
         </div>
@@ -25,17 +25,17 @@
 
     <!-- section2 starts -->
     <div class="container section" *ngIf="sections.section2" id="section-2">
-        <div class="main_home_div_text MontserratRegular">
+        <div class="main_home_div_text MontserratRegular sec-pages">
 
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <h1>statement</h1>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="sec-2-h">Problem statement</h1>
                     
                 </div>
-                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                           <ul>
                             <li *ngFor="let statement of CaseStudyDetaildata.statement.statements">
-                                <span>{{statement}}</span>
+                                <span class="sec-2-span">{{statement}}</span>
                             </li>
                           </ul>
                   </div>
@@ -47,9 +47,9 @@
 
   <!-- section 3 starts -->
     <div class="container section" *ngIf="sections.section3" id="section-3">
-        <div class="main_home_div_text MontserratRegular">
-           <h1>Workflow</h1>
-           <p>{{CaseStudyDetaildata.workflow.title}}</p>
+        <div class="main_home_div_text MontserratRegular sec-pages">
+           <h1 class="sec-3-h">Workflow</h1>
+           <p class="sec-3-p">{{CaseStudyDetaildata.workflow.title}}</p>
            <div class="row">
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.workflow.workflowImage}}">
@@ -61,9 +61,9 @@
 
 <!-- section 4 starts -->
     <div class="container section" *ngIf="sections.section4" id="section-4">
-        <div class="main_home_div_text MontserratRegular">
-           <h1>Solution</h1>
-           <p>{{CaseStudyDetaildata.solution.title}}</p>
+        <div class="main_home_div_text MontserratRegular sec-pages">
+           <h1 class="sec-3-h">Solution</h1>
+           <p class="sec-3-p">{{CaseStudyDetaildata.solution.title}}</p>
            <div class="row">
              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.solution.image1}}">
@@ -77,11 +77,11 @@
 <!-- section 4 ends -->
 
 <!-- section 5 starts -->
-    <div class="container section" *ngIf="sections.section5" id="section-5">
-        <div class="main_home_div_text MontserratRegular">
+    <div class="container section divsec" *ngIf="sections.section5" id="section-5">
+        <div class="main_home_div_text MontserratRegular sec-pages">
           <div class="row">
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-                <h1>Tech stack</h1>
+                <h1 class="sec-3-h">Tech stack</h1>
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 
@@ -91,13 +91,13 @@
                 <img class="casestudyfourthSecImage" src="{{CaseStudyDetaildata.techstack.imageg1}}">
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                  <p>{{CaseStudyDetaildata.techstack.title}}</p>
+                  <p class="sec-5-p">{{CaseStudyDetaildata.techstack.title}}</p>
                   <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" *ngFor="let techStack of CaseStudyDetaildata.techstack.techstacks">
                            
                             <img src="{{techStack.images}}">
                             <h1 class="techstackHead">{{techStack.title}}</h1>
-                            <p>{{techStack.subTitle}}</p>
+                            <p class="sec-5-p1">{{techStack.subTitle}}</p>
                         </div>
                         <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                             <img src="/assets/images/html5.png">
@@ -125,14 +125,14 @@
 
 
       <!-- section 6 strats -->
-    <div class="container section" *ngIf="sections.section6" id="section-6">
-        <div class="main_home_div_text MontserratRegular">
+    <div class="container section divsec1" *ngIf="sections.section6" id="section-6">
+        <div class="main_home_div_text MontserratRegular sec-pages">
               <div class="row">
                   <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                      <h1 class="sixsceHead">Key highlights</h1>
+                      <h1 class="sixsceHead sec-3-h">Key highlights</h1>
                       <ul>
                           <li *ngFor="let keyHighlights of CaseStudyDetaildata.keyHighlights.keyHighlightsData">
-                              <span>{{keyHighlights}}</span>
+                              <span class="sec-2-span">{{keyHighlights}}</span>
                           </li>
                           
                         </ul>

@@ -15,10 +15,40 @@
                <a class="header_list" [routerLink]="['/KrypticMinds/blog']" (click)="selected = 'Blog'"> Blog</a>
             </li>
             <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
-                <a class="header_list" (click)="selected = 'Team'">Team</a>
+                <a class="header_list" [routerLink]="['/KrypticMinds/Team']" (click)="selected = 'Team'">Team</a>
             </li>
             <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
-                <a class="header_list" (click)="selected = 'Contact'">Contact</a>
+                <a class="header_list" [routerLink]="['/KrypticMinds/ContactUs']" (click)="selected = 'Contact'">Contact</a>
+            </li>
+        </ul>
+      
+    </div>
+    <a class="sidebar" href="javascript:void(0)" (click)="navDropDown()">
+        <img class="menu" src="./assets/images/menu-1.png">
+    </a>
+    <div id="sidebar-menu">
+            <div>
+                <a [routerLink]="['/KrypticMinds/Home']"><img  alt="paketo_image" class="header-m-img" src="/assets/images/final-light.png"></a>
+                <img class="close" src="./assets/images/cross-symbol-1.png" (click)="navDropDown()">
+            </div>
+        <ul class="u-list">
+            <li class="m-list" routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a  class="header_list link" [routerLink]="['/KrypticMinds/Home']" (click)="disableScreen()">  Home</a>
+            </li>
+            <li class="m-list" routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a  class="header_list link" [routerLink]="['/KrypticMinds/AboutUs']"  (click)="disableScreen()">About Us</a>
+            </li>
+            <li class="m-list" routerLinkActive="listActive link" [routerLinkActiveOptions]="{exact: false}">
+               <a  class="header_list link" [routerLink]="['/KrypticMinds/CaseStudy']" (click)="disableScreen()"> Case Study</a>
+            </li>
+            <li class="m-list" routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+               <a class="header_list link" [routerLink]="['/KrypticMinds/blog']" (click)="disableScreen()"> Blog</a>
+            </li>
+            <li class="m-list" routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a class="header_list link" [routerLink]="['/KrypticMinds/Team']" (click)="disableScreen()">Team</a>
+            </li>
+            <li class="m-list" routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}">
+                <a class="header_list link" [routerLink]="['/KrypticMinds/ContactUs']" (click)="disableScreen()">Contact</a>
             </li>
         </ul>
     </div>

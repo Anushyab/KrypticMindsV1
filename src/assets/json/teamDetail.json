@@ -1,0 +1,58 @@
+{
+    "teamDetail": [
+      {
+        "id": 1,
+        "name": "ULF WINBERG ",
+        "designation": "CEO",
+        "url": "/assets/images/group-6.png"
+      },
+      {
+        "id": 2,
+        "name": "MEGAN HOLLAND",
+        "designation": "Studio Manager",
+        "url": "/assets/images/sm-img.png"
+      },
+      {
+          "id": 3,
+          "name": "OLLY",
+          "designation": "Sr. Developer",
+          "url":"/assets/images/group-17.png"
+      }, 
+      {
+          "id": 4,
+          "name": "RYAN",
+          "designation": "Creative Lead",
+          "url": "/assets/images/group-20.png"
+      },
+      {
+        "id": 5,
+        "name": "ULF WINBERG ",
+        "designation": "CEO",
+        "url": "/assets/images/group-6.png"
+      },
+      {
+        "id": 6,
+        "name": "MEGAN HOLLAND",
+        "designation": "Studio Manager",
+        "url": "/assets/images/sm-img.png"
+      },
+      {
+          "id": 7,
+          "name": "OLLY",
+          "designation": "Sr. Developer",
+          "url":"/assets/images/group-17.png"
+      }, 
+      {
+          "id": 8,
+          "name": "RYAN",
+          "designation": "Creative Lead",
+          "url": "/assets/images/group-20.png"
+      },
+      {
+        "id": 9,
+        "name": "RYAN",
+        "designation": "Creative Lead",
+        "url": "/assets/images/group-20.png"
+    }
+    ]
+  }

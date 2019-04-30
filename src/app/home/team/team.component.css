@@ -1,0 +1,181 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+{
+    .title
+    {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+    .team-p
+    {
+        font-family: Montserrat-Regular;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: normal;
+        color: #ffffff;
+        padding-top: 7px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
+{
+    .title
+    {
+        font-family: Montserrat-Regular;
+        font-size: 24px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+    .team-p
+    {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: normal;
+        color: #ffffff;
+        padding-top: 13px;
+    }
+}
+@media only screen and (min-device-width : 1024px)
+{
+    .title
+    {
+        font-family: Montserrat-Regular;
+        font-size: 28px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.32;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+    .team-p
+    {
+        font-family: Montserrat-Regular;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.69;
+        letter-spacing: normal;
+        color: #ffffff;
+        padding-top: 8px;
+    }
+    .team-page
+    {
+        padding-left: 102px;
+    }
+}
+.progress
+{
+    height:5px !important; 
+    background-color: #4d5fa4 !important;
+}
+.small-img
+{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+.caro-bg
+{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 338px;
+}
+.caro-bg-div
+{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+.caro-bg:hover .caro-bg-div
+{
+    display: none;
+}
+.caro-bg-div1
+{
+    display: none;
+}
+.caro-bg:hover .caro-bg-div1
+{
+    display: block;
+    position:absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.caro-bg-div2
+{
+    display: inline-block;
+}
+.div-t
+{
+    text-align: center;
+}
+.twit-m
+{
+    margin-right: 8px;
+}
+
+
+
+
+
+.caro-img
+{
+    position: relative;
+}
+.img-text
+{
+    position: absolute;
+    /* padding-top: 106%; */
+    text-align: center;
+    top: 78%;
+    width: 100%;
+}
+.text-1
+{
+    font-family: Montserrat-Regular;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+.text-2
+{
+    font-family: Montserrat-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f1f1f1;
+}
+.img-text:hover {
+  
+   top: 70%;
+}
+textarea, input{
+    outline: none !important;
+}

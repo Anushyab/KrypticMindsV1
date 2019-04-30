@@ -1,9 +1,59 @@
-.CaseStudy-view{
-    padding-top:50px;
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+{
+    .CaseStudy-view{
+        padding-top:24px;
+    }
+    .CaseStudy-view-text{
+        margin-right: 10px;
+        font-family: Montserrat-Regular;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.9px;
+        color: #ffffff;
+    }
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
+{
+    .CaseStudy-view{
+        padding-top:40px;
+    }
+    .CaseStudy-view-text{
+        margin-right: 10px;
+        font-family: Montserrat-Regular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.9px;
+        color: #ffffff;
+    }
 }
 .CaseStudy-view-span{
     cursor: pointer;
 }
-.CaseStudy-view-text{
-    margin-right: 10px;
+@media only screen and (min-device-width : 1024px)
+{
+    .study-page1
+    {
+        padding-left: 102px;
+    }
+    .CaseStudy-view{
+        padding-top:50px;
+    }
+    .CaseStudy-view-text{
+        margin-right: 10px;
+        font-family: Montserrat-Regular;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.9px;
+        color: #ffffff;
+    }
 }

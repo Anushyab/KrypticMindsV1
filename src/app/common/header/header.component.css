@@ -52,16 +52,25 @@ ul {
     padding-right: 30px;
   }
   
-  li {
+  .header_menu li {
     float: left;
   }
   
-  li a {
+  .header_menu li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    text-align: center;
+    color: #ffffff;
   }
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
@@ -76,11 +85,73 @@ ul {
   }
   @media only screen and (min-device-width : 992px) and (max-device-width : 1023px) {
     .header_menu{
-      display: block;
+      display: none;
     }
   }
   @media only screen and (min-device-width : 1024px) {
     .header_menu{
       display: block;
     }
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 1023px) {
+    .sidebar{
+      display: block;
+      position: absolute;
+      float: right;
+      right: 5px;
+    }
+  }
+  @media only screen and (min-device-width : 1024px) {
+    .sidebar{
+      display: none;
+    }
+  }
+  .close
+  {
+    float: right;
+    padding: 5px;
+  }
+  #sidebar-menu
+  {
+    display: none;
+    background-color: #263162;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    text-align: left;
+    padding: 10px;
+  }
+  .menu
+  {
+    padding: 21px;
+  }
+  .u-list
+  {
+    list-style-type: none;
+    padding-left: 55px;
+    padding-top: 75px;
+  }
+  .link
+  {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .m-list
+  {
+    padding-top: 32px;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .header-m-img {
+    padding: 5px;
   }
