@@ -1,7 +1,7 @@
 import {  ViewChild, ElementRef, TemplateRef , HostListener} from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '/home/hashworks/KrypticMindsV1/src/app/api.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
@@ -44,48 +44,41 @@ export class TeamComponent implements OnInit {
   //   onResize(event) {
   //     this.innerWidth = window.innerWidth;
   //   }
-  constructor(public gs: ApiService, ) { }
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    if (event.keyCode === 38) {
+      this.router.navigateByUrl('KrypticMinds/blog');
+    }
+    if (event.keyCode === 40) {
+      this.router.navigateByUrl('/KrypticMinds/ContactUs');
+    }
+  }
+  constructor(public gs: ApiService, public router: Router, ) { }
   ngOnInit() {
-    // console.log(this.customOptions.slideBy);
-    // if(this.customOptions.slideBy==4)
-    // console.log(4);
     this.innerWidth = window.innerWidth;
     this.teams();
   }
 
   getData(data) {
-    // this.activeSlides = data;
-    console.log('in getData', data);
-    console.log('in s-l', data.slides.length);
     if ( this.innerWidth >= 320 && this.innerWidth <= 399)
     {
       this.startPostion1 = data.startPosition + 1;
       let val = (this.startPostion1 / this.arrayLength) * 100;
-      console.log('val', val.toString());
       let x = document.getElementById('proId');
       x.style.width = val.toString() + '%';
     } else if (this.innerWidth >= 400 && this.innerWidth <= 1023)
     {
       let sp = data.startPosition + 3;
       let val = (sp / this.arrayLength) * 100;
-      console.log('val', val.toString());
       let x = document.getElementById('proId');
       x.style.width = val.toString() + '%';
     } else if (this.innerWidth >= 1024 ) {
       let sp = data.startPosition + 4;
       let val = (sp / this.arrayLength) * 100;
-      console.log('val', val.toString());
+     // console.log('val', val.toString());
       let x = document.getElementById('proId');
       x.style.width = val.toString() + '%';
     }
-    // if(data.startPosition == 4)
-    // {
-    //   console.log('inif');
-    //   x.style.width = '100%';
-    // }
-    // else {
-    //   x.style.width = '50%';
-    // }
 }
 teams() {
   const url = '/assets/json/teamDetail.json';

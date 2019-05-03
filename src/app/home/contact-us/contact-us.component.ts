@@ -1,12 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit , HostListener} from '@angular/core';
+import { ApiService } from '/home/hashworks/KrypticMindsV1/src/app/api.service';
+import { EmailService } from '/home/hashworks/KrypticMindsV1/src/app/email.service';
+import { Router } from '@angular/router';
+export interface Model {
+  name: string;
+  email: string;
+  companyName: string;
+  comment: string;
+ }
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
-  model = {
+  model: Model = {
     name: '',
     email: '',
     companyName: '',
@@ -16,15 +24,33 @@ export class ContactUsComponent implements OnInit {
   companyClicked = false;
   emailClicked = false;
   messageClicked = false;
-  constructor() { }
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    if (event.keyCode === 38) {
+      this.router.navigateByUrl('KrypticMinds/Team');
+    }
+    if (event.keyCode === 40) {
+      this.router.navigateByUrl('/KrypticMinds/Home');
+    }
+  }
+  constructor(private _emailService: EmailService, public router: Router, ) { }
   ngOnInit() {
   }
   customerDetails()
   {
-    console.log(this.model.name);
-    console.log(this.model.email);
-    console.log(this.model.companyName);
-    console.log(this.model.comment);
+    // console.log(this.model.name);
+    // console.log(this.model.email);
+    // console.log(this.model.companyName);
+    // console.log(this.model.comment);
+    this._emailService.emailSubmit(this.model).subscribe(
+      function(data) {
+        console.log(data);
+      },
+      function (error) {
+        console.log(error);
+      }
+    );
+
   }
   isClicked()
   {
@@ -54,5 +80,4 @@ export class ContactUsComponent implements OnInit {
       this.nameClicked = false;
     this. companyClicked = false;
    }
-  
 }

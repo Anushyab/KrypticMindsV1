@@ -97,6 +97,7 @@
   border-bottom: solid 1px #ffffff;
   color:white;
   border-radius:0;
+  /* outline: none; */
 }
 .input-field-c
 {
@@ -109,6 +110,7 @@
   color:white;
   border-radius:0;
   overflow: hidden;
+  /* outline: none; */
 }
     
 }
@@ -210,6 +212,7 @@
   border-bottom: solid 1px #ffffff;
   color:white;
   border-radius:0;
+  /* outline: none; */
 }
 .input-field-c
 {
@@ -222,6 +225,7 @@
   color:white;
   border-radius:0;
   overflow: hidden;
+  /* outline: none; */
 }
 }
 @media only screen and (min-device-width : 1024px)
@@ -326,6 +330,7 @@
   border-bottom: solid 1px #ffffff;
   color:white;
   border-radius:0;
+  /* outline: none; */
 }
 .input-field-c
 {
@@ -338,12 +343,14 @@
   color:white;
   border-radius:0;
   overflow: hidden;
+  /* outline: none; */
 }
 }
 
 .input-field.hover
 {
     border: solid 1px rgba(252, 93, 66, 0.66);
+    /* outline: none; */
 }
 .selectedField
 {
@@ -362,3 +369,11 @@
     font-family:Montserrat-Regular ;
     position: relative;
   }
+  textarea:focus, input:focus{
+    outline: none !important;
+    outline-offset: none;
+    box-shadow: none;
+}
+textarea, input{
+    padding: 0;
+}

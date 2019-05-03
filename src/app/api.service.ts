@@ -9,7 +9,6 @@ import {
 // tslint:disable-next-line:import-blacklist
 import { throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -24,7 +23,7 @@ export class ApiService {
     let headers = new HttpHeaders();
     headers = headers
       .set('Accept', 'application/json')
-      .set('Content-Type', 'application/json');
+      .set('Content-Type', 'application/x-www-form-urlencoded');
     // return headers;
     // let headers = new Headers();
     // headers.append('Accept', 'application/json');

@@ -28,11 +28,11 @@
           </div>
             <label class="lable-sub"  [class.selectedLabel]="emailClicked">Email-id</label>
             <input type = "email" autocomplete="off" (click)="isClicked2()" [class.selectedField]="emailClicked" name="email" [(ngModel)]="model.email" #email="ngModel" class="input-field form-control" pattern="(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}))" required >
-            <div *ngIf="!email.valid  && model.email != '' && email.touched== true"  class="help-block" >Please type your Email ID in the format <strong>yourname@example.com</strong></div>
+            <div *ngIf="!email.valid  && (email.dirty && email.touched)"  class="help-block" >Please type your Email ID in the format <strong>yourname@example.com</strong></div>
 
             <label class="lable-sub" [class.selectedLabel]="messageClicked">Your Message</label>
             <textarea class="input-field-c form-control" (click)="isClicked3()" [class.selectedField]="messageClicked" name="comment"  [(ngModel)]="model.comment" #comment="ngModel"></textarea>
-              <div class="btn-div"><button class="btn" [disabled]="!f.form.valid">Send Message</button></div>
+              <div class="btn-div"><button class="btn" type="submit" [disabled]="!f.form.valid">Send Message</button></div>
         </form>
     </div>
   </div>

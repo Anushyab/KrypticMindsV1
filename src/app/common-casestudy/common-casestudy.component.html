@@ -6,8 +6,8 @@
             <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/AboutUs']"></a></li>
             <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: false}"><a [routerLink]="['/KrypticMinds/CaseStudy']"></a></li>
             <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/blog']"></a></li>
-            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a></a></li>
-            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/Team']"></a></li>
+            <li routerLinkActive="listActive" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/KrypticMinds/ContactUs']"></a></li>
         </ol>
     </div>
     <!-- section1 starts -->
@@ -65,10 +65,10 @@
            <h1 class="sec-3-h">Solution</h1>
            <p class="sec-3-p">{{CaseStudyDetaildata.solution.title}}</p>
            <div class="row">
-             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.solution.image1}}">
              </div>
-             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img class="casestudyThirdSecImage" src="{{CaseStudyDetaildata.solution.image2}}">
              </div>
            </div>
@@ -86,6 +86,8 @@
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 
             </div>
+        </div>
+        <div class="row">
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
               
                 <img class="casestudyfourthSecImage" src="{{CaseStudyDetaildata.techstack.imageg1}}">
@@ -93,7 +95,7 @@
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                   <p class="sec-5-p">{{CaseStudyDetaildata.techstack.title}}</p>
                   <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" *ngFor="let techStack of CaseStudyDetaildata.techstack.techstacks">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="spcialRow" *ngFor="let techStack of CaseStudyDetaildata.techstack.techstacks">
                            
                             <img src="{{techStack.images}}">
                             <h1 class="techstackHead">{{techStack.title}}</h1>
@@ -118,7 +120,7 @@
                               </div> -->
                   </div>
               </div>
-          </div>
+         </div>
           </div>
     </div>
     <!-- section 5 ends -->

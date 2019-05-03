@@ -38,6 +38,7 @@ export class BlogComponent implements OnInit {
       this.router.navigateByUrl('KrypticMinds/CaseStudy/1');
     }
     if (event.keyCode === 40) {
+      this.router.navigateByUrl('/KrypticMinds/Team');
     }
   }
   constructor(public router: Router) { }
